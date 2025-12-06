@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "SafeBrowse 🧸",
+  "version": "1.0",
+  "description": "Smart safety filter for children using AI and parent rules.",
+  
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+
+  "host_permissions": [
+    "*://*/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "action": {
+    "default_title": "SafeBrowse"
+  }
+}
